@@ -1,0 +1,263 @@
+/* navbar */
+.navbar{
+    background-image: url('quantum_assets/header pattern svg.svg');
+    position:fixed;
+    z-index: 1000;
+    border-bottom: solid #3AC7EC 3px; 
+    width: 100%;
+}
+
+.header-logo{
+    background: url('quantum_assets/icons/logo used in header.svg') no-repeat center;
+    width: 150px;
+    height: 40px;
+}
+
+
+/* Card */
+.html,body {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .container {
+    width: 600px;
+    margin-top: 10vw; 
+    
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .back-arrow {
+    font-size: 18px;
+    align-items: start;
+  }
+
+  .title {
+    flex: 1;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+  }
+.card
+{
+    border-top: solid #3AC7EC 5px; 
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+}
+
+
+  .radio-group {
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  .radio-label {
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-input {
+    display: none;
+  }
+
+  .radio-icon {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .radio-label:hover .radio-icon {
+    opacity: 0.8;
+  }
+
+  .radio-label:hover {
+    opacity: 0.8;
+  }
+
+  .radio-label .radio-text {
+    line-height: 1;
+  }
+
+  #radio-district:checked + .radio-label .radio-icon {
+    background-image: url('quantum_assets/icons/radio-button-on.svg'); 
+  }
+
+  #radio-district:checked + .radio-label .radio-text {
+    color: green;
+  }
+
+  #radio-district:not(:checked) + .radio-label .radio-icon {
+    background-image: url('quantum_assets/icons/radio-button-off.svg'); 
+  }
+
+  #radio-independent:checked + .radio-label .radio-icon {
+    background-image: url('quantum_assets/icons/radio-button-on.svg'); 
+  }
+
+  #radio-independent:checked + .radio-label .radio-text {
+    color: green; 
+  }
+
+  #radio-independent:not(:checked) + .radio-label .radio-icon {
+    background-image: url('quantum_assets/icons/radio-button-off.svg'); 
+  }
+
+
+
+  .dropdown-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .dropdown-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .dropdown-select {
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    background-image: url('quantum_assets/icons/arrow-down.svg'); 
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .input-field 
+  {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-field input 
+  {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .input-field input:focus {
+    outline: none;
+    border-color: #333;
+  }
+
+  .forgot-link {
+    cursor: pointer;
+    font-family: quicksand ;
+    font-weight: normal;
+    color: green;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .icon 
+  {
+    position: absolute;
+    right: 5px;
+    top: 10%;
+    cursor: pointer;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .remember-me label {
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    padding-top: 7px;
+    margin-left: 5px;
+  }
+
+  .log-in-button {
+    font-weight:500;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:#3FD28B;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  #rememberMe:checked {
+    content: url('quantum_assets/icons/checkbox-checked.svg');
+  }
+
+  
+  .about {
+    color: #1F7A54;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative; /* Added this */
+    z-index: 2; /* Added this */
+  }
+/* footer */
+
+.footer {
+  background-color: #E0E1E1;
+    text-align: center;
+    padding: 20px;
+  }
+
+.footer-logo {
+    max-width: autofit;
+}
+  .vertical-line {
+    border-left: 1px solid #333;
+    height: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .copyright {
+    font-size: 12px;
+    color: #555;
+    vertical-align: middle;
+  }

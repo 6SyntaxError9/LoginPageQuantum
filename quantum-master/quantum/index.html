@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>login page</title>
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+
+      background-color: lightgrey;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar dark bg-dark" >
+    <div class="navbar-brand">
+      <div class="header-logo"></div>
+  </nav>
+
+
+  <div class="container" style="margin-top">
+    <div class="card">
+      <div class="header">
+        <div class="back-arrow">
+          <img src="quantum_assets/icons/back.svg">
+        </div>
+        <div class="title">
+          <span>Log in with Quantum</span>
+        </div>
+      </div>
+
+
+      <div class="radio-group">
+        <input type="radio" name="loginOption" value="district" id="radio-district" class="radio-input">
+        <label class="radio-label" for="radio-district">
+          <div class="radio-icon"></div>
+          <span class="radio-text">District</span>
+        </label>
+        <input type="radio" name="loginOption" value="independent" id="radio-independent" class="radio-input">
+        <label class="radio-label" for="radio-independent">
+          <div class="radio-icon"></div>
+          <span class="radio-text">Independent School </span>
+        </label>
+      </div>
+
+      <br>
+      <div class="dropdown-container">
+        <div class="dropdown-title">State*</div>
+        <select class="dropdown-select">
+          <option value="" disabled selected><b>Select State</b></option>
+          <option value="Alabama">Alabama</option>
+          <option value="Detroit">Detroit</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Texas">Texas</option>
+        </select>
+      </div>
+
+      <div class="dropdown-container">
+        <div class="dropdown-title">District*</div>
+        <select class="dropdown-select">
+          <option value="" disabled selected><b>Select District</b></option>
+          <option value="Alabama School District">Alabama School District</option>
+          <option value="Detroit School District">Detroit School District</option>
+          <option value="Arizona School District">Arizona School District</option>
+          <option value="Texas School District">Texas School District</option>
+        </select>
+      </div>
+      <br>
+
+
+      <div class="input-field">
+        <input type="email" placeholder="Username/Email ID*">
+        <div class="forgot-link">
+          <b>FORGOT USERNAME?</b>
+        </div>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password*">
+        <div class="forgot-link">
+          <b>FORGOT PASSWORD?</b>
+        </div>
+        <div class="icon">
+          <img src="quantum_assets/icons/preview.svg" alt="View Password">
+        </div>
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe"><b>Remember me</b></label>
+      </div>
+      <button class="log-in-button"><b>LOG IN</b></button>
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+  <div class="about">
+    About
+    <div class="vertical-line"></div>
+    Contact us
+  </div>
+
+  <footer class="footer">
+    <img src="/quantum-master/quantum/quantum_assets/icons/logo used in footer.svg" alt="Company Logo" class="footer-logo">
+    <div class="vertical-line"></div>
+    <span class="copyright">Copyright &copy; 2021-2023 &nbsp; <b>Zeus Systems Pvt. Ltd.</b>&nbsp;&nbsp; All rights
+      reserved.</span>
+  </footer>
+
+</body>
+<script src="script.js"> </script>
+
+</html>
